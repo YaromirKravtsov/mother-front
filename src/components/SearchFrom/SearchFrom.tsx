@@ -18,9 +18,6 @@ const SearchFrom: FC<Pros> = ({ setReralEstate }) => {
     const [minPrice, setMinPrice] = useState<string>('0');
     const [maxPrice, setMaxPrice] = useState<string>('10000');
 
-
-
-
     const search = async () => {
         try {
             const { data } = await $api.get('search', {

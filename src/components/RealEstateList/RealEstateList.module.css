@@ -32,3 +32,12 @@
 
 
 }
+
+@media (max-width: 500px){
+    .list {
+        justify-content: center;
+    }
+    .item {
+        width: 100%;
+    }
+}
