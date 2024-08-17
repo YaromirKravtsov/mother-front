@@ -3,6 +3,7 @@ import MyInput from '../UI/MyInput/MyInput'
 import styles from './SearchFrom.module.css';
 import MyButton from '../UI/MyButton/MyButton';
 import axios from 'axios';
+import $api from '../api';
 export interface realEstate {
     count: number,
     message: string[]
@@ -18,7 +19,7 @@ const SearchFrom: FC<Pros> = ({setReralEstate }) => {
     const [maxPrice,setMaxPrice] = useState('');
     const search = async () => {
         try {
-            const { data } = await axios.get('http://localhost:5000/search', {
+            const { data } = await $api.get('search', {
                 params: {
                     bed: bed,
                     region: region,
