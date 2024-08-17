@@ -1,4 +1,5 @@
-import React, { FC, ReactNode } from 'react'
+import React, { FC, ReactNode } from 'react';
+import styles from './MyButton.module.css'
 interface Props{
     onClick: ()=> void,
     children: ReactNode
@@ -6,7 +7,7 @@ interface Props{
 const MyButton:FC<Props> = ({children,onClick}) => {
   return (
     <>
-      <button onClick={onClick}>{children}</button>
+      <button onClick={onClick} className={styles.button}>{children}</button>
     </>
   )
 }

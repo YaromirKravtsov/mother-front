@@ -1,0 +1,13 @@
+.formMain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.inputsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-bottom: 20px;
+}

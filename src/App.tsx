@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import SearchFrom from './components/SearchFrom'
+import SearchFrom from './components/SearchFrom/SearchFrom'
 import SeatchRealEstate from './modules/SeatchRealEstate/SeatchRealEstate';
 const App = () => {
   return (
