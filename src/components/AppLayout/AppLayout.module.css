@@ -1,0 +1,126 @@
+.app {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #FAFBFF;
+
+}
+
+.navigationBar {
+    width: 300px;
+    min-width: 300px;
+    left: 0px;
+    top: 0px;
+    padding: 40px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navItem {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 37px;
+    height: 37px;
+}
+
+.navText {
+
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    letter-spacing: -0.01em;
+
+    color: #9197B3;
+
+
+}
+
+.logoRow {
+    margin-bottom: 50px;
+}
+
+.logoText {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* v.01 */
+.logoVersion {
+    font-family: 'Poppins';
+
+    font-weight: 500;
+    font-size: 10px;
+
+
+    letter-spacing: -0.01em;
+
+    color: #838383;
+
+}
+
+.navIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.searchIcon {
+    width: 35px;
+    height: 35px;
+}
+
+.logout {
+    margin-top: auto;
+}
+
+.main {
+    width: calc(100vw - 300px);
+    max-height: 100vh;
+}
+
+@media (max-width: 1280px) {
+    .navigationBar {
+        width: 230px;
+        min-width: 230px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logoText {
+        font-size: 20px;
+     
+    }
+
+    .navIcon {
+        width: 20px;
+        height: 20px;
+    }
+    .navItem {
+        column-gap: 5px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    
+}

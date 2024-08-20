@@ -1,24 +1,25 @@
-.button{
+.button {
     /* button */
 
 
-width: 360px;
-height: 40px;
-background-color: #28a745;
-font-family: 'Inter';
+    width: 360px;
+    height: 48px;
+    background-color: #28a745;
+    font-family: 'Inter';
 
-font-weight: 500;
-font-size: 20px;
-border: none;
-border-radius: 10px;
-color: #FFFFFF;
-
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
 
 
 
 }
-@media (max-width: 500px){
-    .button{
+
+@media (max-width: 500px) {
+    .button {
         width: 100%;
     }
 }

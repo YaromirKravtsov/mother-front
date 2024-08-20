@@ -1,12 +1,16 @@
 import React from 'react'
 import './App.css';
 import SearchFrom from './components/SearchFrom/SearchFrom'
-import SeatchRealEstate from './modules/SeatchRealEstate/SeatchRealEstate';
+import AuthGuard from './app/components/AuthGuard/AuthGuard';
+import AppRouter from './app/router/AppRouter';
+import AppLayout from './components/AppLayout/AppLayout';
 const App = () => {
   return (
-    <div>
-        <SeatchRealEstate/>
-    </div>
+    <AuthGuard>
+      <AppLayout>
+        <AppRouter />
+      </AppLayout>
+    </AuthGuard>
   )
 }
 

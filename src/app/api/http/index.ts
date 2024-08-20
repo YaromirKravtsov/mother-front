@@ -1,13 +1,13 @@
 import axios from "axios";
-/* import { AuthResponse } from "../../models/AuthResponse"; */
+import { AuthResponse } from "../../models/AuthResponse";
 
 export const API_URL = process.env.REACT_APP_API_URL;
 
 const $api = axios.create({
-/*     withCredentials: true, */
+    withCredentials: true,
     baseURL: API_URL
 });
-/* 
+
 $api.interceptors.request.use((config) => {
     config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
     return config;
@@ -43,8 +43,5 @@ $api.interceptors.response.use((response) => {
 
     return Promise.reject(error);
 });
-
-
- */
 
 export default $api;
